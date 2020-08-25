@@ -1,17 +1,21 @@
-telnet relay.datatools.com.co 25
+#para probar un smtp por linea de comandos ejecutar una por una
+telnet smtp.midominio.com
 
-HELO wspruebas.datatools.com.co
-MAIL FROM: erwin.suarez@datatools.com.co
-RCPT TO: erwidaniel@gmail.com
+HELO mihost.midominio.com
+MAIL FROM: erwin.suarez@midominio.com
+RCPT TO: erwidaniel@gmail.com 
 DATA
 Subject: Prueba de postfix
-From: erwin.suarez@datatools.com.co
+From: erwin.suarez@midominio.com
 To: erwidaniel@gmail.com
 Hola,
 Esto es una prueba.
 Adiós.
 .
 QUIT
+
+
+
 
 Si se requiere autenticacion se usa 
 AUTH LOGIN
