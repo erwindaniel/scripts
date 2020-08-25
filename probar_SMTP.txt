@@ -1,0 +1,19 @@
+telnet relay.datatools.com.co 25
+
+HELO wspruebas.datatools.com.co
+MAIL FROM: erwin.suarez@datatools.com.co
+RCPT TO: erwidaniel@gmail.com
+DATA
+Subject: Prueba de postfix
+From: erwin.suarez@datatools.com.co
+To: erwidaniel@gmail.com
+Hola,
+Esto es una prueba.
+Adiós.
+.
+QUIT
+
+Si se requiere autenticacion se usa 
+AUTH LOGIN
+y se envía el usuario y contraseña en base 64
+
